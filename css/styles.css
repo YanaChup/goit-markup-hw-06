@@ -531,6 +531,8 @@ button {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+/* end backdrop */
+/* start modal */
 .modal {
   position: absolute;
   left: 50%;
@@ -668,4 +670,4 @@ button {
   display: block;
   margin: 0 auto;
 }
-/* end backdrop */ ;
+/* end modal */
