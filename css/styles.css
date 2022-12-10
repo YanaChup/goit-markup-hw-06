@@ -392,7 +392,9 @@ button {
   color: var(--secondary-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
   border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
 }
 .footer-signup-input::placeholder {
   font-size: 16px;
@@ -598,7 +600,9 @@ button {
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
 }
-.register-field:focus {
+.footer-signup-input:focus,
+.register-field:focus,
+.register-message:focus {
   border-color: var(--accent-color);
 }
 .register-icon-inner {
@@ -625,9 +629,6 @@ button {
   outline: none;
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
-}
-.register-message:focus {
-  border-color: var(--accent-color);
 }
 .register-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
