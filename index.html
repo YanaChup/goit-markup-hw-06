@@ -623,58 +623,71 @@
             <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-          <label class="modal-form-label">
-            <span class="modal-form-label-span">Ім'я</span>
-            <span class="modal-icon-inner">
-              <input class="modal-form-input" type="text" name="username" />
-              <svg class="modal-icon">
-                <use href="./images/icons/icons.svg#icon-modal-user"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label">
-            <span class="modal-form-label-span">Телефон</span>
-            <span class="modal-icon-inner">
-              <input class="modal-form-input" type="tel" name="usertel" />
-              <svg class="modal-icon">
-                <use href="./images/icons/icons.svg#icon-modal-phone"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label">
-            <span class="modal-form-label-span">Пошта</span>
-            <span class="modal-icon-inner">
-              <input class="modal-form-input" type="emai" name="useremail" />
-              <svg class="modal-icon">
-                <use href="./images/icons/icons.svg#icon-modal-email"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label">
-            <span class="modal-form-label-span">Коментар</span>
-            <textarea
-              class="modal-form-textarea"
-              name="usercomment"
-              placeholder="Введіть коментар"
-            ></textarea>
-          </label>
-          <input
-            class="modal-checkbox-input visually-hidden"
-            type="checkbox"
-            name="user-agreement"
-            id="user-agreement"
-          />
-          <label class="modal-checkbox-label" for="user-agreement"
-            >Погоджуюся з розсилкою та приймаю&nbsp;
-            <a class="modal-form-checkbox-link" href=""
-              >Умови договору</a
-            ></label
-          >
-          <div class="modal-btn-inner">
-            <button class="modal-form-btn" type="submit">Відправити</button>
+        <form class="register-form" name="register-form">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="register-group" role="group">
+            <label class="register-wrap">
+              <span class="register-label">Ім'я</span>
+              <span class="register-icon-inner">
+                <input class="register-field" type="text" name="username" />
+                <svg class="register-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-user"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-wrap">
+              <span class="register-label">Телефон</span>
+              <span class="register-icon-inner">
+                <input class="register-field" type="tel" name="usertel" />
+                <svg class="register-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-wrap">
+              <span class="register-label">Пошта</span>
+              <span class="register-icon-inner">
+                <input class="register-field" type="emai" name="useremail" />
+                <svg class="register-icon">
+                  <use href="./images/icons/icons.svg#icon-modal-email"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-wrap">
+              <span class="register-label">Коментар</span>
+              <textarea
+                class="register-message"
+                name="usercomment"
+                placeholder="Введіть коментар"
+              ></textarea>
+            </label>
           </div>
+          <label class="register-agreement">
+            <input
+              class="register-checkbox visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+            />
+            <svg class="register-agreement-icon" width="16" height="15">
+              <use
+                class="icon-check"
+                href="./images/icons/icons.svg#icon-checked"
+              ></use>
+              <use
+                class="icon-uncheck"
+                href="./images/icons/icons.svg#icon-unchecked"
+              ></use>
+            </svg>
+            <span class="register-agreement-text">
+              Погоджуюся з розсилкою та приймаю
+              <a class="register-agreement-link" href="" target="_blank"
+                >Умови договору</a
+              >
+            </span>
+          </label>
+          <!-- <div class="modal-btn-inner"> -->
+          <button class="modal-form-btn" type="submit">Відправити</button>
+          <!-- </div> -->
         </form>
       </div>
     </div>

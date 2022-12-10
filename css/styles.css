@@ -569,101 +569,103 @@ button {
   font-weight: 700;
   text-align: center;
 }
-.modal-form {
+.register-group {
+  margin-bottom: 20px;
+}
+.register-wrap {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
-.modal-form-label {
+.register-wrap:not(:last-child) {
   margin-bottom: 10px;
 }
-.modal-form-label-span {
-  display: block;
-  margin-bottom: 4px;
+.register-label {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
-.modal-icon-inner {
-  display: block;
-  position: relative;
-}
-.modal-form-input {
+.register-field {
   padding-left: 42px;
   padding-right: 12px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: transparent;
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
 }
-.modal-form-input:focus,
-.modal-form-textarea:focus {
-  outline: none;
+.register-field:focus {
   border-color: var(--accent-color);
 }
-.modal-icon {
-  display: block;
+.register-icon-inner {
+  position: relative;
+}
+.register-icon {
   position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: var(--brand-color);
   top: 50%;
   left: 12px;
   transform: translatey(-50%);
-  width: 18px;
-  height: 18px;
   transition: fill var(--transition-dur-and-func);
 }
-.modal-form-input:focus + .modal-icon {
+.register-field:focus + .register-icon {
   fill: var(--accent-color);
 }
-.modal-form-textarea {
+.register-message {
   resize: none;
-  padding: 11px 16px;
-  width: 100%;
+  padding: 12px 16px;
   height: 120px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
 }
-.modal-form-textarea::placeholder {
+.register-message:focus {
+  border-color: var(--accent-color);
+}
+.register-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
 }
-.modal-checkbox-input {
-  transition: background-image var(--transition-dur-and-func);
-}
-.modal-checkbox-input:checked + .modal-checkbox-label::before,
-.modal-checkbox-input:focus + .modal-checkbox-label::before {
-  background-image: url("../images/icon-check.svg");
-  border: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.modal-checkbox-label {
+.register-agreement {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 24px;
-  color: var(--text-color);
+  gap: 8px;
   margin-bottom: 30px;
 }
-.modal-checkbox-label::before {
-  content: "";
-  display: block;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--brand-color);
-  cursor: pointer;
+.icon-uncheck {
+  fill: var(--brand-color);
+  transition: opacity var(--transition-dur-and-func);
 }
-.modal-form-checkbox-link {
+.register-checkbox:checked + .register-agreement-icon > .icon-uncheck {
+  opacity: 0;
+}
+.icon-check {
+  opacity: 0;
+  fill: var(--accent-color);
+  transition: opacity var(--transition-dur-and-func);
+}
+.register-checkbox:checked + .register-agreement-icon > .icon-check {
+  opacity: 1;
+}
+.register-agreement-text {
+  line-height: 24px;
+  color: var(--text-color);
+  user-select: none;
+}
+.register-agreement-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
-.modal-btn-inner {
-  display: flex;
-  justify-content: center;
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
 }
-/* end backdrop */
+/* end backdrop */ ;
